@@ -19,9 +19,14 @@ function colorSwitcher() {
   } else colorSwitcherOn();
 }
 
+function colorUpdater() {
+  bodyEl.style.backgroundColor =
+    colors[randomIntegerFromInterval(0, colors.length - 1)];
+}
+
 function colorSwitcherOn() {
   switcherId = setInterval(() => {
-    bodyEl.style.backgroundColor = colors[randomIntegerFromInterval(0, 5)];
+    colorUpdater;
   }, 1000);
 }
 
