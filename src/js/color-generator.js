@@ -26,7 +26,7 @@ function colorUpdater() {
 
 function colorSwitcherOn() {
   switcherId = setInterval(() => {
-    colorUpdater;
+    colorUpdater();
   }, 1000);
 }
 
